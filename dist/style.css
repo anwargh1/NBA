@@ -1,0 +1,54 @@
+#main{
+    font-family: cursive;
+}
+#search {
+    background-color: #cbc5c8;
+    border-radius: 13px;
+    box-shadow: 2px 1px 10px #ccc4c4;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: cursive;
+    width: 120px;
+    padding: 2px;
+    height: 45px;
+    
+}
+#player-input {
+    background-color: #fad3e4;
+    width: 80%;
+    height: 45px;
+    border-radius: 13px;
+    box-shadow: 2px 1px 10px #ccc4c4;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: cursive;
+    padding: 5px;
+    margin: 10px;
+    
+}
+#finalPlayer{
+    display: inline-block;
+    background-color: #cd91abd6;
+    margin: 6px;
+    border-radius: 14px;
+    box-shadow: 2px 1px 9px #747077 ;
+    padding: 10px ;
+    width: 290px;
+}
+
+#fisrt-name ,
+#jersey , 
+#position{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+img{
+    background-color: #f3ecf4c7;
+    width: 291px;
+    height: 200px;;
+
+   
+}
