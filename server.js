@@ -15,7 +15,7 @@ const teamToIDs = {
 
 let players = [];
 
-const fetch = (function () {
+const fetchPlayers = function () {
   axios
     .get("http://data.nba.net/10s/prod/v1/2018/players.json")
     .then(function (response) {
@@ -26,19 +26,21 @@ const fetch = (function () {
     .catch(function (error) {
       console.log(error);
     });
-})();
+};
+
+fetchPlayers();
 
 app.get("/teams/:teamName", function (req, res) {
   const teamName = req.params.teamName;
   res.send(
     players
-      .filter((element) => element.teamId == teamToIDs[teamName])
-      .map((element) => {
+      .filter((player) => player.teamId == teamToIDs[teamName])
+      .map((player) => {
         return {
-          firstName: element.firstName,
-          lastName: element.lastName,
-          position: element.pos,
-          jersey: element.jersey,
+          firstName: player.firstName,
+          lastName: player.lastName,
+          position: player.pos,
+          jersey: player.jersey,
         };
       })
   );

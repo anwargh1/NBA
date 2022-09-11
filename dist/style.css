@@ -27,7 +27,7 @@
     
 }
 #finalPlayer{
-    display: inline-block;
+    display: background-color;
     background-color: #cd91abd6;
     margin: 6px;
     border-radius: 14px;

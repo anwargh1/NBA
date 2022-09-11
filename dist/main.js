@@ -1,19 +1,8 @@
-// const fetchData = function () {
-//   let input = $("#player-input").val();
-//   $.get(`/teams/${input}`, function (data) {
-//     $("#players").empty();
-//     data.forEach((element) => {
-//       $("#players")
-//         .append(`<div id = finalPlayer>
-//         <div id=fisrt-name>${element.firstName} ${element.lastName} </div>
-//         <div id=jersey>${element.jersey} </div> 
-//         <img src=https://nba-players.herokuapp.com/players/${element.lastName}/${element.firstName} alt=>
-//         <div id=position>${element.position} </div></div> `);
-//     });
-//   });
-// };
+
+const render = $("#player-input")
+
 const fetchData = function () {
-    let input = $("#player-input").val();
+    let input = render.val();
     $.get(`/teams/${input}`, function (data) {
       $("#players").empty();
       data.forEach((element) => {
